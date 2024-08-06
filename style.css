@@ -17,6 +17,20 @@ body {
   width: 100%;
 }
 
+
+
+.section-p1 {
+  padding: 40px 80px;
+}
+
+
+
+.section-m1 {
+  margin: 40px 0;
+}
+
+/* Global Styles */
+
 header{
   display: flex;
   align-items: center;
@@ -154,8 +168,7 @@ nav ul li a:hover::after{
 .products{
 display: flex;
 flex-direction: row;
-align-items: center;
-justify-content: space-between;
+justify-content: space-around;
 }
 .product{
   width: 200px;
@@ -307,7 +320,7 @@ margin-bottom: 30px;
   height: 300px;
   padding: 150px 50px;
 }
-#newsletter{
+#newsletter, #shop-newsletter{
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -317,23 +330,23 @@ margin-bottom: 30px;
   color: white;
   margin-bottom: 20px;
 }
-#newsletter h1{
+#newsletter h1, #shop-newsletter h1{
   margin-bottom: 10px;
 
 }
-#newsletter input{
+#newsletter input, #shop-newsletter input{
   width: 220px;
   height: 45px;
   padding: 15px;
   border: none;
 }
-#newsletter form{
+#newsletter form, #shop-newsletter form{
   align-items: center;
   text-align: center;
   position: relative;
 }
 
-#newsletter button {
+#newsletter button, #shop-newsletter button {
   padding: 18px 25px;
   font-size: 13px;
   position: inline-block;
@@ -481,14 +494,14 @@ nav ul li{
   background-size: cover;
 
 }
-#newsletter {
+#newsletter, #shop-newsletter {
   flex-direction: column;
   justify-content: flex-start;
   background: rgb(65, 61, 88);
   color: white;
   margin-bottom: 50px;
 }
-#newsletter button {
+#newsletter button, #shop-newsletter button {
   padding: 12px 17px;
   font-size: 10px;
   align-self: flex-start;
@@ -511,5 +524,114 @@ nav ul li{
 }
 
 
+/* Shop css */
 
+#shop-hero{
+  background-image: url('img/banner/b1.jpg');
+  height: 40vh;
+  text-align: center;
+  color: white;
+  padding: 80px 0px 0px;
+  margin-bottom: 50px;
+}
+#shop-hero h2{
+  margin-bottom: 20px;
+}
+#shop-newsletter{
+  margin-top: 50px;
+}
+#pagination{
+  margin: 50px 0px 50px 0px;
+  text-align: center;
+}
+#pagination a, #pagination i{
+  padding: 15px 10px;
+  background-color: aquamarine;
+}
+#pagination a{
+  text-decoration: none;
+  font-size: 20px;
+}
+#pagination i{
+  font-size: 20px;
+}
 
+/* Single products */
+#single-product-detail{
+width: 100%;
+padding: 50px;
+
+}
+.single-product-images{
+  width: 40vw;
+
+}
+#small-images{
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+}
+.small-image-col{
+  flex-basis: 24%;
+}
+
+#product-desc{
+ width: 40vw;
+}
+
+#product-desc h2, #product-desc h1, #product-desc select, #product-desc div, #product-desc p{
+  margin-bottom: 20px;
+}
+#product-desc select{
+  padding: 10px 5px
+}
+#product-desc button{
+  border: none;
+  background-color: rgb(90, 124, 113);
+  color: white;
+}
+
+#count{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  
+}
+#count input{
+  width: 50px;
+  text-align: center;
+  font-size: 18px;
+  outline: none;
+}
+#count input:focus{
+  outline: none;
+}
+#count button{
+  padding: 15px 10px;
+}
+#single-product-detail{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  
+}
+
+@media  (max-width:779px) {
+
+  #single-product-detail{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+  }
+
+  .single-product-images{
+    width: 100%;
+    margin-bottom: 50px;
+  
+  }
+  #product-desc{
+    width: 100%;
+   }
+   
+}
