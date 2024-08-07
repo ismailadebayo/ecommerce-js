@@ -100,7 +100,7 @@ nav ul li a:hover::after{
   color: blueviolet;
   margin-top: 10px;
   margin-bottom: 20px;
-}
+} 
 
 #hero-button{
   background-image: url('img/button.png');
@@ -635,3 +635,92 @@ padding: 50px;
    }
    
 }
+
+
+/* blog */
+
+#blog-hero{
+ background-image: url('img/banner/b19.jpg');
+ background-size: cover;
+ height: 40vh;
+ text-align: center;
+ padding-top: 70px;
+ color: white
+}
+
+.blog-unit{
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  margin-bottom: 30px;
+
+}
+
+.article-intro{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+ 
+.article-intro h2{
+ margin-bottom: 20px;
+}
+
+.article-intro a{
+  text-decoration: none;
+  color: black;
+}
+.article-intro a:hover{
+ color:aqua;
+ cursor: pointer;
+}
+
+@media (max-width: 799px){
+  .blog-unit img{
+    display: none;
+  }
+}
+/* blog */
+
+/* about us */
+
+#about-hero{
+  background-image: url('img/about/banner.png');
+  background-size: cover;
+  height: 40vh;
+  text-align: center;
+  padding-top: 70px;
+  color: white
+ }
+
+ #about-us{
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+ }
+
+ #marque{
+  background-color: aliceblue;
+
+ }
+ .about-video{
+  align-items: center;
+  text-align: center;
+ }
+
+ @media (max-width: 799px){
+  #about-us{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+   }
+
+   #about-us img{
+    width: 400px;
+ 
+   }
+ }
+
+ /* about us */
+
