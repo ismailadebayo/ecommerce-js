@@ -735,6 +735,10 @@ padding: 50px;
   color: white
 }
 
+#contact-hero h2{
+  margin-bottom: 20px ;
+}
+
 #contact{
   display: flex;
   flex-direction: row;
@@ -769,6 +773,7 @@ padding: 50px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  padding-left: 80px;
 }
 
 
@@ -794,7 +799,6 @@ padding: 50px;
   
 }
 #send form textarea{
-  padding: 20px;
   width: 500px;
   height: 300px;
   border-radius: 5px;
@@ -826,6 +830,7 @@ form button{
   border: none;
   border-radius: 5px;
   margin-top: 10px;
+  display: block;
 }
 
 @media (max-width: 900px){
@@ -836,9 +841,10 @@ form button{
 }
 
 #send {
+ margin-left: 20px;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
+  align-items: center;
+  justify-content: center;
   text-align: left;
 }
 
@@ -849,20 +855,41 @@ form button{
 }
 #send{
   padding-left: 20px;
+  width: 100%;
 }
 #send form input{
-  width: 300px;
-  height: 30px;
+  width: 450px;
+  height: 40px;
   border-radius: 2px;
+  margin: auto auto;
   
 }
 
 #send form textarea {
   padding: 20px;
-  width: 300px;
+  width: 450px;
   height: 200px;
   border-radius: 5px;
+  margin: auto auto;
 }
 
+}
+@media (max-width: 470px){
+  #send{
+    padding-left: 20px;
+  }
+  #send form input{
+    width: 300px;
+    height: 30px;
+    border-radius: 2px;
+    
+  }
+  
+  #send form textarea {
+    padding: 20px;
+    width: 300px;
+    height: 200px;
+    border-radius: 5px;
+  }
 }
 /* contact us */ 
