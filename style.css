@@ -724,3 +724,145 @@ padding: 50px;
 
  /* about us */
 
+/* contact us */
+
+#contact-hero{
+  background-image: url('img/banner/b20.jpg');
+  background-size: cover;
+  height: 40vh;
+  text-align: center;
+  padding-top: 70px;
+  color: white
+}
+
+#contact{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.detail span, .detail h2, .detail div{
+   margin-bottom: 20px;
+   margin-top: 20px;
+}
+
+.detail div{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+
+}
+
+
+.detail li{
+  list-style-type: none;
+}
+
+.map iframe{
+  width: 40vw;
+  height: 400px
+}
+
+#send{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+#send form div{
+ margin-bottom: 20px;
+}
+
+#send form h2{
+  margin-bottom: 50px;
+}
+
+ label{
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#send form input{
+  width: 500px;
+  height: 40px;
+  border-radius: 2px;
+  
+}
+#send form textarea{
+  padding: 20px;
+  width: 500px;
+  height: 300px;
+  border-radius: 5px;
+}
+#people{
+  padding: 50px;
+}
+ #people h2{
+  margin-bottom: 70px;
+ }
+#people div{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#people div p{
+  margin-left: 20px;
+}
+
+form button{
+  padding: 10px 15px;
+  font-size: 14px;
+  background-color: blanchedalmond;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+@media (max-width: 900px){
+  #contact {
+    width: 80vw;
+    flex-direction: column;
+    padding: 30px
+}
+
+#send {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  text-align: left;
+}
+
+.map iframe{
+  width: 60vw;
+  height: 400px;
+  margin: auto auto
+}
+#send{
+  padding-left: 20px;
+}
+#send form input{
+  width: 300px;
+  height: 30px;
+  border-radius: 2px;
+  
+}
+
+#send form textarea {
+  padding: 20px;
+  width: 300px;
+  height: 200px;
+  border-radius: 5px;
+}
+
+}
+/* contact us */ 
