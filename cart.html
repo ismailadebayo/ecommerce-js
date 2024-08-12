@@ -5,8 +5,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-
+        <title>Cart</title>
         <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
 
         <link rel="stylesheet" href="style.css">
@@ -14,9 +13,209 @@
 
     <body>
 
+        <header>
+            <img src="img/logo.png" alt="logo">
+
+            <nav >
+                <ul id="nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li> <a href="shop.html">Shop</a></li>
+                    <li> <a href="blog.html">Blog</a></li>
+                    <li> <a  href="about.html">About us</a></li>
+                    <li> <a href="contact.html">Contact</a></li>
+                    <li id="bag"> <a  href="cart.html" class="active"><i class="far fa-shopping-bag"></i></a></li>
+                     <a href="" id="close"> <i class="far fa-times "></i> </a>
+
+                </ul>
+            </nav>
+            <div id="mobile">
+                <i id="shop-bag" class="far fa-shopping-bag"></i>
+                <i id="ham" class="fas fa-outdent"></i>
+            </div>
+        </header>
+
+        <section  id="cart-hero">
+            <h2>#Checkout</h2>
+            <p>These are your products</p>
+    
+        </section>  
+
+        <section id="cart" class="section-p1">
+
+            <table width="100%">
+
+                <thead>
+                    <tr>
+                        <td> Remove </td>
+                        <td> Image </td>
+                        <td> Product </td>
+                        <td> Price </td>
+                        <td> Quantity </td>
+                        <td> Subtotal </td>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td> <a href=""><i class="far fa-times-circle"></i></a> </td>
+                        <td> <img src="img/products/f1.jpg" alt=""></td>
+                        <td> Threaded Shirt </td>
+                        <td> 3000 </td>
+                        <td> <input type="number" value="1"></td>
+                        <td>#15000</td>
+                    </tr>
+                    <tr>
+                        <td> <a href=""><i class="far fa-times-circle"></i></a> </td>
+                        <td> <img src="img/products/f2.jpg" alt=""></td>
+                        <td> Columbian Shirt </td>
+                        <td> 3500 </td>
+                        <td> <input type="number" value="1"></td>
+                        <td>#14000</td>
+                    </tr>
+                    <tr>
+                        <td> <a href=""><i class="far fa-times-circle"></i></a> </td>
+                        <td> <img src="img/products/f3.jpg" alt=""></td>
+                        <td> Okrika Shirt </td>
+                        <td> 5000 </td>
+                        <td> <input type="number" value="1"></td>
+                        <td>#18000</td>
+                    </tr>
+                    <tr>
+                        <td> <a href=""><i class="far fa-times-circle"></i></a> </td>
+                        <td> <img src="img/products/f4.jpg" alt=""></td>
+                        <td> Jamaican Wool Shirt </td>
+                        <td> 6000 </td>
+                        <td> <input type="number" value="1"></td>
+                        <td>#10000</td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </section>
+
+        <section id="cart-total-coupon" class="section-p1">
+
+            <div id="coupon">
+
+                <h3>Apply Coupon</h3>
+                <div>
+                    <input type="text">
+                    <button>Apply</button>
+                </div>
+
+            </div>
+
+            <div id="cart-total">
+                <form action="">
+                    <table width="100%">
+                    <h3>Cart Total </h3>
+                        <tbody>                    
+                            <tr>
+                                <td>Cart Subtotal</td>
+                                <td>#500</td>
+                            </tr>
+                            <tr>
+                                <td>Shipping fee</td>
+                                <td>Free</td>
+                            </tr>
+                            <tr>
+                                <td>Total</td>
+                                <td>#53500</td>
+                            </tr>
+                        </tbody>
+
+                        <button>Pay</button>
+
+                    </table>
+
+                </form>
+            </div>
+
+            <div>
+
+            </div>
+        </section>
+
+        <section id="shop-newsletter">
+
+            <div>
+                <h1>Subscribe to our Newsletter</h1>
+                <p>Get updates about our latest shop and special offers </p>
+            </div>
+            <form id="form"
+            action="">
+               <input type="email" id="email" placeholder="email"> 
+               <button id="submit">Submit</button>
+              
+            </form>
+        </section>
+
+        
+      
+        <footer>
+
+            <section id="footer-section">
+                    
+               
+                    <div id="first-column">
+                        <img src="img/logo.png" alt="Cara logo">
+                        <h3>Contact</h3>                    
+                        <p><span>Address: </span> 18, Olaiya street, Makoko Yaba, Lagos</p>
+                        <p><span>Phone: </span> 234 8185296264</p>
+                        <p><span>Hours: </span> 8:00 am - 6:00 pm</p>
+
+                        <div>
+                            <h4>Follow us</h4>
+                            <div id="socials">
+                                <i class="fab fa-facebook-f"></i>
+                                <i class="fab fa-twitter"></i>
+                                <i class="fab fa-instagram"></i>
+                                <i class="fab fa-pinterest-p"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="second-column"> 
+                        <h3>About</h3>
+                        <p>About us</p>
+                        <p>Delivery Information</p>
+                        <p>Privacy Policy</p>
+                        <p>Terms & Condition</p>
+                        <p>Contact Us</p>
+                    </div>
+          
+        
+                    <div id="third-column">
+                        <h3>My Account</h3>
+                        <p>Sign in</p>
+                        <p>View list</p>
+                        <p>My Wishlist</p>
+                        <p>Track My Order</p>
+                        <p>Contact Us</p>
+                    </div>
+
+                <div id="fourth-column">
+                    <h3>Install App</h3>
+                    <p>From Appstore and Google Playstore</p>
+                    <div id="logos">
+                        <img id="apple" src="img/pay/app.jpg" alt="apple logo">
+                        <img id="play" src="img/pay/play.jpg" alt="play logo">
+                    </div>
+                    <p>Secured Payment Gateway</p>
+                    <img src="img/pay/pay.png" alt="pay logo">
+                    
+                    <p></p>
+                </div> 
+         
+         </section>
+
+
+         <section id="copy"> &copy Ismail 2024</section>
+
+        </footer>
+
 
         <script src="script.js"></script>
-
     </body>
 
 </html>
