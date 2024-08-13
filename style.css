@@ -49,6 +49,9 @@ nav ul{
  
 }
 
+#bag{
+  width: 15px
+}
 nav ul li{
   list-style-type: none;
   width: auto;
